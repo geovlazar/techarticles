@@ -1,5 +1,5 @@
 theme = "coder" # set the theme
-
+baseURL = "http://geovlazar.netlify.com/"
 [params] # theme parameters
     author = "Geo V L" # author's name
     info = "Full Stack DevOps and Magician" # author's job title or info
