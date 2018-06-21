@@ -5,7 +5,7 @@ linktitle: What is GDPR
 nomenu:
   main:
     parent: tutorials
-next: /tutorials/what-is-gedpr
+next: /tutorials/what-is-gdpr
 prev: /tutorials/what-is-gdpr
 title: What is GDPR
 tags : [
