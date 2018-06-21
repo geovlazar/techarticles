@@ -6,6 +6,7 @@ next: /tutorials/github-pages-blog
 prev: /tutorials/automated-deployments
 title: How can we work Ubuntu from Windows10
 categories : ["server"]
+image: img/tags.jpg
 ---
 
 We can configure Ubuntu Linux from your Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux

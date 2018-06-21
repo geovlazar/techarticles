@@ -14,7 +14,7 @@ tags : [
 ]
 categories : ["healthcare"]
 weight: 10
-image: img/writing.jpg
+image: img/steth.jpg
 authorAvatar: hugo-logo.png
 ---
 
