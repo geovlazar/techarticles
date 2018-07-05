@@ -44,6 +44,14 @@ cd rose ##change directory to rose
 git log ##will list log of rose repository
 ```
 
+For cloning a git repository with all its submodules clone it with --recursive like the following
+
+```
+git clone --recursive <repo> <foldername>
+```
+
+
+
 
 
 
