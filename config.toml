@@ -27,9 +27,9 @@ paginate        = 6
 
   author = "EM"
   authorAvatar = "img/ghost-icon.png"
-  authorLocation = "Bandung, ID"
-  authorWebsite = "https://eueung.github.io"
-  authorDescription = "Describe yourself.."
+  authorLocation = "Cochin, IN"
+  authorWebsite = "https://github.com/geovlazar"
+  authorDescription = "Working as Software Engineer, Architect of my Life, Superhero of my Kid"
 
   pageNotFoundTitle = "404 - Page not found"
 
