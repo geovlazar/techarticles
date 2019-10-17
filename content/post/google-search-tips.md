@@ -40,6 +40,17 @@ Use the tilde operator ( ~ ) in Google to search for terms related to the specif
 
 Add a "-" symbol before a search term to exclude it from Google's search results. If, for example, we are looking for an ice cream recipe, but you can't stand vanilla, type "ice cream -vanilla" -- without the quotes -- into Google.
 
+## Google as Calculator
+
+We can do any arith metic operations in Google . If you are in Google Home page for calculation you can directly type the numbers and arithmetic operators there and you will get results. So not going your Operating System's calculator App you can user calculator in your browser. Once you do calculation along with displaying results you will get calculator  screen in browser itself
+
+## Google as your dictionary 
+
+We can use Google as dictionary. Type define:<word-we-want-to-know> will result the meaning of the word you searched. For example if we type "define:hallucinations" we will get meaning , pronounciation , synonyms etc like in any dictionary.
+
+Hope you may know this tricks and you are already using these techniques. I just want to share this for those who dont know this ;)
+
+
 #### Reference
 
 * [Techwalla](https://www.techwalla.com/articles/seven-helpful-time-saving-tips-for-using-google-search) 
