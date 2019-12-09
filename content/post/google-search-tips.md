@@ -19,7 +19,7 @@ authorAvatar: hugo-logo.png
 
 Internet is everything in these days. We can get any kind of information from the era of internet and Google. Most of us rely on Google for searching the data and finding details from Google. Normally we type what we required to to search in google home page and click on the links which we got from there.
 
-By using some simple techniques we can refine the data that we are looking for. It helps us to reach out the exact data which we want to see about the search result 2
+By using some simple techniques we can refine the data that we are looking for. It helps us to reach out the exact data which we want to see about the search result
 
 ## Quotation marks for Phrases
 
