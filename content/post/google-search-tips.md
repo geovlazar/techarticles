@@ -28,7 +28,7 @@ When we add quotes around a series of words, Google searches for Web pages that 
 
 Suppose we want to search with schools name we can use it like "Little Queen School" instead of little Queen School . Now google consider the entire phrase as whole in its search otherwise it search three different words seperately.
 
-## Search from a specific website
+## Search from a specific website Test
 
 Suppose we want to know the information from a specific website we can use the "site:<sitename> before the search string. For example if we want to search anything from the website medigy.com we can give search query like these site:medigy.com healthcare . This will result the results from the specified website only.
 
