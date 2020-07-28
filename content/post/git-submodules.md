@@ -17,7 +17,7 @@ image: img/writing.jpg
 authorAvatar: hugo-logo.png
 ---
 
-Suppose we have a project named 'flower' with different people working on it. Suppose  some other team already created a repository named 'Rose' which can add as a sub directory under our existing 'flower' repository. 
+Suppose we have a project named 'flower' with different people working on it. Suppose  some other team already created a repository named 'Rose' which can add as a sub directory under our existing 'flower' repository. Test
 
 ``` 
 git submodule add https://github.com/<user>/rose rose
