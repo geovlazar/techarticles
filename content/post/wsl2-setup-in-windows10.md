@@ -50,7 +50,7 @@ To only install WSL 1, you should now restart your machine and move on to Instal
 
 ### Update to WSL 2
 
-*Enable the 'Virtual Machine Platform' optional component*
+#### Enable the 'Virtual Machine Platform' optional component
 
 
 Before installing WSL 2, you must enable the "Virtual Machine Platform" optional feature.
