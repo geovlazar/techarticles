@@ -1,7 +1,7 @@
 ---
 author: "Geo V L"
 date: 2020-08-18
-linktitle: Working Ubuntu as App in windows
+linktitle: Working WSL2 in Windows10
 next: /tutorials/github-pages-blog
 prev: /tutorials/automated-deployments
 title: How can we work Debian from Windows10
