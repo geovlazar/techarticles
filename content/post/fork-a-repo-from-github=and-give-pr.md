@@ -31,7 +31,7 @@ For this we have to do the following
 * Click Create pull request to open a new pull request.
 
 
-## Fork that repo to our github account
+### Fork that repo to our github account
 
 For forking an repo click on the fork button on the repo home page 
 
@@ -43,10 +43,30 @@ https://github.com/<YourgithubUserName>/<originalreponame>
 
 This repo contain all code and branches in the original repository.
 
+### Clone your forked repo in our local machine
 
+Clone this forked repo in our local machine with forked repo. This will contain all the branches and files in that repo.
+
+
+``` 
+git clone https://github.com/<YourUserName>/<originalreponame>
+```
+
+### Create a branch in our forked repo 
+
+Its a best practice to create a seperate branch for the our changes, FOr this we can use the following command.
+``` 
+git checkout -b our_changes_branch
+```
+
+Also you can set the upstream repo ( the Original Parent repo )
+
+```
+git remote add upstream https://github.com/<originalreponame>
+```
+
+to be continued...
 
 
 #### Reference
 
-* [Git Sub Modules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) 
-* [Working with submodules](https://blog.github.com/2016-02-01-working-with-submodules/)
