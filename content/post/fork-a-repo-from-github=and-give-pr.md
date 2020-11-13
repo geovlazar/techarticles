@@ -7,7 +7,7 @@ nomenu:
     parent: tutorials
 next: /tutorials/github-pages-blog
 prev: /tutorials/automated-deployments
-title: How to generate submodules
+title: How to fork a github repo and give a pull request
 tags : [
     "git",
     "github",
@@ -41,7 +41,7 @@ For forking an repo click on the fork button on the repo home page
 https://github.com/<YourgithubUserName>/<originalreponame>
 ```
 
-This repo contain all code and branches in the original repository
+This repo contain all code and branches in the original repository.
 
 
 
