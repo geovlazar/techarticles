@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development on </title>
+    <link>/tags/development/</link>
+    <description>Recent content in development on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 11 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to fork a github repo and give a pull request</title>
+      <link>/how-to-fork-a-github-repo-and-give-a-pull-request/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/how-to-fork-a-github-repo-and-give-a-pull-request/</guid>
+      <description>You found a useful repository in github. You have some suggestions to the owner of git hub.Do you try to find out owners email and send a email to him about that repo? What is the standard way to modify the content of that repo?
+For this we have to do the following
+Fork the original repo to our github Clone forked repo to our machine Create a branch Make our changes on that branch Push it back to our repo.</description>
+    </item>
+    
+    <item>
+      <title>How to generate submodules</title>
+      <link>/how-to-generate-submodules/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/how-to-generate-submodules/</guid>
+      <description>Suppose we have a project named &amp;lsquo;flower&amp;rsquo; with different people working on it. Suppose some other team already created a repository named &amp;lsquo;Rose&amp;rsquo; which can add as a sub directory under our existing &amp;lsquo;flower&amp;rsquo; repository.
+git submodule add https://github.com/&amp;lt;user&amp;gt;/rose rose At this point, you’ll have a rose folder inside flower, but if you were to check inside that folder, depending on your version of Git, you might see … nothing. Newer versions of Git will do this automatically, but older versions will require you to explicitly tell Git to download the contents of rose:</description>
+    </item>
+    
+    <item>
+      <title>PostGraphile</title>
+      <link>/postgraphile/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/postgraphile/</guid>
+      <description>&amp;ldquo;PostGraphile&amp;rdquo; is a instant, secure and fast GraphQL API for PostgresSQL. This builds and serves a client-facing GraphQL API by inspecting your existing database (tables, columns, relations, views, procedures and more). No GraphQL coding necessary to get the data from an existing Schema or Database.This works with Apollo, Relay Modern and most other GraphQL clients. Enforce user permissions at the data level using PostgreSQL&amp;rsquo;s well established, granular and trusted Role-Based Access Control (RBAC) and Row-Level Security (RLS) features.</description>
+    </item>
+    
+    <item>
+      <title>Programmatic User creation and Welcome mail with customized contents from entities - Drupal 7</title>
+      <link>/programmatic-user-creation-and-welcome-mail-with-customized-contents-from-entities-drupal-7/</link>
+      <pubDate>Thu, 24 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/programmatic-user-creation-and-welcome-mail-with-customized-contents-from-entities-drupal-7/</guid>
+      <description>Consider a case that we need to add a drupal user when we create a content type and that specific drupal user has first name and last name and contact details from a node. Usual way to create a Drupal user is to use the method user_save as the following way. For sending message we can set default mail alert from &amp;ldquo;Configuration -&amp;gt; Account Settings -&amp;gt; Email Alerts Section &amp;quot; as explained below</description>
+    </item>
+    
+  </channel>
+</rss>

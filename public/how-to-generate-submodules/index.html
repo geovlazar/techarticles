@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>How to generate submodules | </title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Suppose we have a project named &lsquo;flower&rsquo; with different people working on it. Suppose some other team already created a repository named &lsquo;Rose&rsquo; which can add as a sub directory under our existing &lsquo;flower&rsquo; repository.
+git submodule add https://github.com/&lt;user&gt;/rose rose At this point, you’ll have a rose folder inside flower, but if you were to check inside that folder, depending on your version of Git, you might see … nothing. Newer versions of Git will do this automatically, but older versions will require you to explicitly tell Git to download the contents of rose:">
+    <meta name="generator" content="Hugo 0.113.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="How to generate submodules" />
+<meta property="og:description" content="Suppose we have a project named &lsquo;flower&rsquo; with different people working on it. Suppose some other team already created a repository named &lsquo;Rose&rsquo; which can add as a sub directory under our existing &lsquo;flower&rsquo; repository.
+git submodule add https://github.com/&lt;user&gt;/rose rose At this point, you’ll have a rose folder inside flower, but if you were to check inside that folder, depending on your version of Git, you might see … nothing. Newer versions of Git will do this automatically, but older versions will require you to explicitly tell Git to download the contents of rose:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/how-to-generate-submodules/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-05-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-05-29T00:00:00+00:00" /><meta property="og:site_name" content="Geo Tech  Blog" />
+<meta itemprop="name" content="How to generate submodules">
+<meta itemprop="description" content="Suppose we have a project named &lsquo;flower&rsquo; with different people working on it. Suppose some other team already created a repository named &lsquo;Rose&rsquo; which can add as a sub directory under our existing &lsquo;flower&rsquo; repository.
+git submodule add https://github.com/&lt;user&gt;/rose rose At this point, you’ll have a rose folder inside flower, but if you were to check inside that folder, depending on your version of Git, you might see … nothing. Newer versions of Git will do this automatically, but older versions will require you to explicitly tell Git to download the contents of rose:"><meta itemprop="datePublished" content="2018-05-29T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-05-29T00:00:00+00:00" />
+<meta itemprop="wordCount" content="279">
+<meta itemprop="keywords" content="git,development," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to generate submodules"/>
+<meta name="twitter:description" content="Suppose we have a project named &lsquo;flower&rsquo; with different people working on it. Suppose some other team already created a repository named &lsquo;Rose&rsquo; which can add as a sub directory under our existing &lsquo;flower&rsquo; repository.
+git submodule add https://github.com/&lt;user&gt;/rose rose At this point, you’ll have a rose folder inside flower, but if you were to check inside that folder, depending on your version of Git, you might see … nothing. Newer versions of Git will do this automatically, but older versions will require you to explicitly tell Git to download the contents of rose:"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="http://citrusinformatics.com" title="Company page">
+              Company
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/categories/" title="Categories page">
+              Categories
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/tags/" title="Tags page">
+              Tags
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About me page">
+              About me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/" title="Home page">
+              Home
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">How to generate submodules</h1>
+      
+      <p class="tracked">
+        By <strong>Geo V L</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-05-29T00:00:00Z">May 29, 2018</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Suppose we have a project named &lsquo;flower&rsquo; with different people working on it. Suppose  some other team already created a repository named &lsquo;Rose&rsquo; which can add as a sub directory under our existing &lsquo;flower&rsquo; repository.</p>
+<pre tabindex="0"><code>git submodule add https://github.com/&lt;user&gt;/rose rose
+</code></pre><p>At this point, you’ll have a rose folder inside flower, but if you were to check inside that folder, depending on your version of Git, you might see … nothing.
+Newer versions of Git will do this automatically, but older versions will require you to explicitly tell Git to download the contents of rose:</p>
+<pre tabindex="0"><code>git submodule update --init --recursive
+</code></pre><p>If everything looks good, you can commit this change and you’ll have a rose folder in the flower repository with all the content from the rose repository.
+On GitHub, the rose folder icon will have a little indicator showing that it is a submodule</p>
+<p>And clicking on the rose folder will take you over to the rose repository.</p>
+<p>Now you’ve embedded the rose repository inside the flower repository. You can interact with all the content from rose as if it were a folder inside flower (because it is).</p>
+<p>On the command-line, Git commands issued from flower (or any of the other folders) will operate on the “parent repository”, flower, but commands you issue from the rose folder will operate on just the rose repository</p>
+<pre tabindex="0"><code>pwd flower  ##move to flower directory
+git log ##will list log of flower repository
+cd rose ##change directory to rose
+git log ##will list log of rose repository
+</code></pre><p>For cloning a git repository with all its submodules clone it with &ndash;recursive like the following</p>
+<pre tabindex="0"><code>git clone --recursive &lt;repo&gt; &lt;foldername&gt;
+</code></pre><h4 id="reference">Reference</h4>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Git Sub Modules</a></li>
+<li><a href="https://blog.github.com/2016-02-01-working-with-submodules/">Working with submodules</a></li>
+</ul>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/git/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">git</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/development/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">development</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/postgraphile/">PostGraphile</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/programmatic-user-creation-and-welcome-mail-with-customized-contents-from-entities-drupal-7/">Programmatic User creation and Welcome mail with customized contents from entities - Drupal 7</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="/" >
+    &copy; 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

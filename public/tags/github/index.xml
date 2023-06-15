@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on </title>
+    <link>/tags/github/</link>
+    <description>Recent content in github on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 11 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to fork a github repo and give a pull request</title>
+      <link>/how-to-fork-a-github-repo-and-give-a-pull-request/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/how-to-fork-a-github-repo-and-give-a-pull-request/</guid>
+      <description>You found a useful repository in github. You have some suggestions to the owner of git hub.Do you try to find out owners email and send a email to him about that repo? What is the standard way to modify the content of that repo?
+For this we have to do the following
+Fork the original repo to our github Clone forked repo to our machine Create a branch Make our changes on that branch Push it back to our repo.</description>
+    </item>
+    
+  </channel>
+</rss>
