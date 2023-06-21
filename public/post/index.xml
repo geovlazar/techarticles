@@ -6,7 +6,19 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 20 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remote Development using SSH</title>
+      <link>/remote-development-using-ssh/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/remote-development-using-ssh/</guid>
+      <description>If you need to edit and debug on a remote machine with VS Code, Install Visual Studio Code Remote - SSH extension which helps connect to a remote running SSH server and take full advantage of VS Code&amp;rsquo;s feature set.
+Prerequisites:
+To get started, you need to have done the following steps:
+Install an OpenSSH compatible SSH client (PuTTY is not supported). Details of remote host machine with pre installed home-creators, SSH username and private Key.</description>
+    </item>
+    
     <item>
       <title>How to use temporary email address</title>
       <link>/how-to-use-temporary-email-address/</link>
@@ -14,7 +26,7 @@
       
       <guid>/how-to-use-temporary-email-address/</guid>
       <description>All of the websites need to submit emails nowadays. But when ever we submit the email address to any website from the next day onwards we will start getting spam Mails from the registered application. Trying to solve this by two easy hacks
-Use Temporary emails There are some websites which allow us to get temporary email address and its inbox for a short span of time. FOr registering and testing we can use the email address and its inbox to see the mails received</description>
+Use Temporary emails Link to heading There are some websites which allow us to get temporary email address and its inbox for a short span of time. FOr registering and testing we can use the email address and its inbox to see the mails received</description>
     </item>
     
     <item>
@@ -104,7 +116,7 @@ For configuring this in our Windows10 machine we need to follow the following st
       <guid>/how-can-we-work-ubuntu-from-windows10/</guid>
       <description>We can configure Ubuntu Linux from your Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux
 For configuring this in our Windows10 machine we need to follow the following steps.
-Initial Settings When we start directly install the Linux app in windows we may face an issue that Subsystem not enabled &amp;ldquo;Press any key to continue&amp;rdquo; in linux.</description>
+Initial Settings Link to heading When we start directly install the Linux app in windows we may face an issue that Subsystem not enabled &amp;ldquo;Press any key to continue&amp;rdquo; in linux.</description>
     </item>
     
   </channel>

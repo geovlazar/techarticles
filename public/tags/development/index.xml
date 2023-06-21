@@ -6,7 +6,19 @@
     <description>Recent content in development on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 11 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remote Development using SSH</title>
+      <link>/remote-development-using-ssh/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/remote-development-using-ssh/</guid>
+      <description>If you need to edit and debug on a remote machine with VS Code, Install Visual Studio Code Remote - SSH extension which helps connect to a remote running SSH server and take full advantage of VS Code&amp;rsquo;s feature set.
+Prerequisites:
+To get started, you need to have done the following steps:
+Install an OpenSSH compatible SSH client (PuTTY is not supported). Details of remote host machine with pre installed home-creators, SSH username and private Key.</description>
+    </item>
+    
     <item>
       <title>How to fork a github repo and give a pull request</title>
       <link>/how-to-fork-a-github-repo-and-give-a-pull-request/</link>

@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Working WSL2 Debian in Windows10 | </title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="We can configure Debian Linux from our Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux
+<html lang="en">
+
+<head>
+  <title>
+  Working WSL2 Debian in Windows10 · 
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="EM">
+<meta name="description" content="We can configure Debian Linux from our Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux
 If you have confusions in how to install a Ubuntu subversion you can go through my previous post: Install the Windows Subsystem for Linux
 For configuring this in our Windows10 machine we need to follow the following steps.">
-    <meta name="generator" content="Hugo 0.113.0">
-    
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
+<meta name="keywords" content="">
 
-    
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Working WSL2 Debian in Windows10"/>
+<meta name="twitter:description" content="We can configure Debian Linux from our Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux
+If you have confusions in how to install a Ubuntu subversion you can go through my previous post: Install the Windows Subsystem for Linux
+For configuring this in our Windows10 machine we need to follow the following steps."/>
 
-
-
-    
-    
-    
-      
-
-    
-
-    
-    
-    <meta property="og:title" content="Working WSL2 Debian in Windows10" />
+<meta property="og:title" content="Working WSL2 Debian in Windows10" />
 <meta property="og:description" content="We can configure Debian Linux from our Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux
 If you have confusions in how to install a Ubuntu subversion you can go through my previous post: Install the Windows Subsystem for Linux
 For configuring this in our Windows10 machine we need to follow the following steps." />
@@ -39,134 +32,136 @@ For configuring this in our Windows10 machine we need to follow the following st
 <meta property="og:url" content="/working-wsl2-debian-in-windows10/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-08-18T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-08-18T00:00:00+00:00" /><meta property="og:site_name" content="Geo Tech  Blog" />
-<meta itemprop="name" content="Working WSL2 Debian in Windows10">
-<meta itemprop="description" content="We can configure Debian Linux from our Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux
-If you have confusions in how to install a Ubuntu subversion you can go through my previous post: Install the Windows Subsystem for Linux
-For configuring this in our Windows10 machine we need to follow the following steps."><meta itemprop="datePublished" content="2020-08-18T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-08-18T00:00:00+00:00" />
-<meta itemprop="wordCount" content="367">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Working WSL2 Debian in Windows10"/>
-<meta name="twitter:description" content="We can configure Debian Linux from our Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux
-If you have confusions in how to install a Ubuntu subversion you can go through my previous post: Install the Windows Subsystem for Linux
-For configuring this in our Windows10 machine we need to follow the following steps."/>
 
-	
-  </head>
 
-  <body class="ma0 avenir bg-near-white">
 
-    
-   
+
+<link rel="canonical" href="/working-wsl2-debian-in-windows10/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
   
+  
+  <link rel="stylesheet" href="/scss/coder.scss" integrity="" crossorigin="anonymous" media="screen" />
 
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        
-      
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
-    <div class="flex-l items-center">
-      
-
-      
-        <ul class="pl0 mr3">
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="http://citrusinformatics.com" title="Company page">
-              Company
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/categories/" title="Categories page">
-              Categories
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/tags/" title="Tags page">
-              Tags
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/about/" title="About me page">
-              About me
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/" title="Home page">
-              Home
-            </a>
-          </li>
-          
-        </ul>
-      
-      
-<div class="ananke-socials">
-  
 </div>
 
-    </div>
-  </div>
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="http://citrusinformatics.com">Company</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/categories/">Categories</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/tags/">Tags</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/">Home</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
 </nav>
 
-    </div>
-  </header>
 
-
-
-    <main class="pb7" role="main">
+    <div class="content">
       
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked">
-          
-        POSTS
-      </aside>
-      
-
-
-
-
-
-
-
-
-
-
-  <div id="sharing" class="mt3 ananke-socials">
-    
-  </div>
-
-
-      <h1 class="f1 athelas mt3 mb1">Working WSL2 Debian in Windows10</h1>
-      
-      <p class="tracked">
-        By <strong>Geo V L</strong>
-      </p>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2020-08-18T00:00:00Z">August 18, 2020</time>
-      
-
-      
-      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="/working-wsl2-debian-in-windows10/">
+          Working WSL2 Debian in Windows10
+        </a>
+      </h1>
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>We can configure Debian Linux from our Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux</p>
-<p>If you have confusions in how to install a Ubuntu subversion you can go through my previous post: <a href="https://geovlazar.netlify.app/how-can-we-work-ubuntu-from-windows10/">Install the Windows Subsystem for Linux</a></p>
+
+    <p>We can configure Debian Linux from our Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux</p>
+<p>If you have confusions in how to install a Ubuntu subversion you can go through my previous post: <a href="https://geovlazar.netlify.app/how-can-we-work-ubuntu-from-windows10/"  class="external-link" target="_blank" rel="noopener">Install the Windows Subsystem for Linux</a></p>
 <p><img src="../img/wsl2-debian.png" alt="Install the Windows Subsystem for Linux"></p>
 <p>For configuring this in our Windows10 machine we need to follow the following steps.</p>
-<h3 id="initial-settings">Initial Settings</h3>
+<h3 id="initial-settings">
+  Initial Settings
+  <a class="heading-link" href="#initial-settings">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>Ensure that Windows 10 update is available in our machine. For checking this do the following steps</p>
-<h4 id="check-your-version-of-windows">Check your version of Windows</h4>
+<h4 id="check-your-version-of-windows">
+  Check your version of Windows
+  <a class="heading-link" href="#check-your-version-of-windows">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
 <p>It can be done very easily by using in command prompt. For checking this we have to type this command</p>
 <p><code>C:\Users\Geo V L&gt; winver</code></p>
 <p>If the version is greater than &ldquo;Version 2004(OS Build 19041.XX)&rdquo; this WSL2 feature can be installed in your machine.</p>
@@ -174,56 +169,117 @@ For configuring this in our Windows10 machine we need to follow the following st
 <p>Otherwise you can check for updates in your Windows. This can be done in the following way:</p>
 <p><code>Start&gt;Settings&gt; Update &amp; Security</code></p>
 <p>Once you are ready with this <code>Version 2004(OS Build 19041.XX)</code> We can start the process</p>
-<h3 id="install-the-windows-subsystem-for-linux">Install the Windows Subsystem for Linux</h3>
+<h3 id="install-the-windows-subsystem-for-linux">
+  Install the Windows Subsystem for Linux
+  <a class="heading-link" href="#install-the-windows-subsystem-for-linux">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>Before installing any Linux distributions on Windows, you must enable the &ldquo;Windows Subsystem for Linux&rdquo; optional feature.</p>
 <p>Open PowerShell as Administrator and run:</p>
 <p><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</code></p>
 <p>To only install WSL 1, you should now restart your machine and move on to Install your Linux distribution from the Windows Store!!</p>
-<h3 id="update-to-wsl-2">Update to WSL 2</h3>
-<h4 id="enable-the-virtual-machine-platform-optional-component">Enable the &lsquo;Virtual Machine Platform&rsquo; optional component</h4>
+<h3 id="update-to-wsl-2">
+  Update to WSL 2
+  <a class="heading-link" href="#update-to-wsl-2">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h4 id="enable-the-virtual-machine-platform-optional-component">
+  Enable the &lsquo;Virtual Machine Platform&rsquo; optional component
+  <a class="heading-link" href="#enable-the-virtual-machine-platform-optional-component">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
 <p>Before installing WSL 2, you must enable the &ldquo;Virtual Machine Platform&rdquo; optional feature.</p>
 <p><code>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</code></p>
 <p>Restart your machine to complete the WSL install and update to WSL 2.</p>
-<h3 id="set-wsl-2-as-your-default-version">Set WSL 2 as your default version</h3>
+<h3 id="set-wsl-2-as-your-default-version">
+  Set WSL 2 as your default version
+  <a class="heading-link" href="#set-wsl-2-as-your-default-version">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>Open PowerShell as Administrator and run this command to set WSL 2 as the default version when installing a new Linux distribution</p>
 <p><code>wsl --set-default-version 2</code></p>
-<p>You might see this message after running that command: WSL 2 requires an update to its kernel component. In that case you have to update the Kernel. For updating Kernel you can download it directly from <a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">here</a>  or Learn it from <a href="https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel"> windows documentations</a></p>
-<h4 id="reference">Reference</h4>
+<p>You might see this message after running that command: WSL 2 requires an update to its kernel component. In that case you have to update the Kernel. For updating Kernel you can download it directly from <a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi"  class="external-link" target="_blank" rel="noopener">here</a>  or Learn it from <a href="https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel"  class="external-link" target="_blank" rel="noopener"> windows documentations</a></p>
+<h4 id="reference">
+  Reference
+  <a class="heading-link" href="#reference">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Install the Windows Subsystem for Linux</a></li>
-<li><a href="https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel">WSL2 Kernel Updates</a></li>
+<li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10"  class="external-link" target="_blank" rel="noopener">Install the Windows Subsystem for Linux</a></li>
+<li><a href="https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel"  class="external-link" target="_blank" rel="noopener">WSL2 Kernel Updates</a></li>
 </ul>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
-    </div>
-
-    <aside class="w-30-l mt6-l">
-
-
-
-
-</aside>
 
   </article>
+</section>
 
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="/" >
-    &copy; 
-  </a>
-    <div>
-<div class="ananke-socials">
   
-</div>
-</div>
-  </div>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     EM 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
 </footer>
 
-  </body>
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
 </html>

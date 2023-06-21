@@ -1,6 +1,6 @@
 ---
 author: "Geo V L"
-date: 2023-06-23
+date: 2023-06-19
 linktitle: Remote Development using SSH
 nomenu:
   main:
@@ -9,15 +9,13 @@ next: /tutorials/github-pages-blog
 prev: /tutorials/automated-deployments
 title: Remote Development using SSH
 tags : [
-    "git",
-    "github",
+    "infrastructure",
     "development",
 ]
-weight: 1
+weight: 10
 image: img/writing.jpg
 authorAvatar: hugo-logo.png
 ---
-
 
 If you need to edit and debug on a remote machine with VS Code, Install Visual Studio Code [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension which helps connect to a remote running SSH server and take full advantage of VS Code's feature set.
 

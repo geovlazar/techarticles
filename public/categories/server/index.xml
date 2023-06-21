@@ -26,7 +26,7 @@ For configuring this in our Windows10 machine we need to follow the following st
       <guid>/how-can-we-work-ubuntu-from-windows10/</guid>
       <description>We can configure Ubuntu Linux from your Windows 10 machine as Windows App. When we work with static site generators like Hugo or need to check any thing in linux from linux machine we can choose this method of linux
 For configuring this in our Windows10 machine we need to follow the following steps.
-Initial Settings When we start directly install the Linux app in windows we may face an issue that Subsystem not enabled &amp;ldquo;Press any key to continue&amp;rdquo; in linux.</description>
+Initial Settings Link to heading When we start directly install the Linux app in windows we may face an issue that Subsystem not enabled &amp;ldquo;Press any key to continue&amp;rdquo; in linux.</description>
     </item>
     
   </channel>
